@@ -25,6 +25,8 @@ To get help, please implemet
 >> help batch_process
 
 For more detail information about our tool, please wait out paper "....". 
+
 If you use this tool in your article, please cite our paper in the following format
+
 .....
 
