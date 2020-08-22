@@ -24,7 +24,7 @@ If you want to batch process your images, the following command is what you need
 To get help, please implement
 >> help batch_process
 
-For more detailed information about our tool, please wait our paper "....". 
+For more detailed information about our tool, please wait for our paper "....". 
 
 If you use this tool in your article, please cite our paper in the following format
 
