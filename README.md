@@ -13,6 +13,7 @@ Please download the "mat_script" folder, and add the folder to your MATLAB path.
 
 
 Use the tool
+
 If you have read your image into the MATLAB workspace, you can implement the following command to calculate the unit connectivity of your image.
 >> [clo_img, num, mea, med] = Connectivity_analysis(img, thres, pix_w);
 
