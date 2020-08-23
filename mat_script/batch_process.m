@@ -13,7 +13,7 @@ for i = 3:length(da_d)
     % sub folder
     fo_d = dir(fu_fo);
     res = struct;
-    all_component_num = 0;
+    all_component_density = 0;
     all_mean_edge_length = 0;
     all_median_edge_length = 0; 
     for j = 3:length(fo_d)
@@ -22,12 +22,12 @@ for i = 3:length(da_d)
         img = imread(fu_fi);
         [clo_img, num, mea, med] = Connectivity_analysis(img, thres, pix_w);
         % assign to the struct
-        res(j-2).component_num = num;
+        res(j-2).component_density = num;
         res(j-2).mean_edge_length = mea;
         res(j-2).median_edge_length = med;
         
         % sum
-        all_component_num = all_component_num + num;
+        all_component_density = all_component_density + num;
         all_mean_edge_length = all_mean_edge_length + mea;
         all_median_edge_length = all_median_edge_length + med;
         
@@ -35,7 +35,7 @@ for i = 3:length(da_d)
         imwrite(clo_img, [sa_fo, 'clo_', fo_d(j).name]);
     end
     all_res(i-2).name = da_d(i).name;
-    all_res(i-2).component_num = all_component_num/(length(fo_d) - 2);
+    all_res(i-2).component_density = all_component_density/(length(fo_d) - 2);
     all_res(i-2).mean_edge_length = all_mean_edge_length/(length(fo_d) - 2);
     all_res(i-2).median_edge_length = all_median_edge_length/(length(fo_d) - 2);
     all_res(i-2).detail_result = res;
