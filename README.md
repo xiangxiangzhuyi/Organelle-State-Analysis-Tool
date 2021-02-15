@@ -2,7 +2,7 @@
 
 Introduction
 
-.......
+We developed a topological analytical tool able to indicate minor, stress-induced structural changes in ER without involving fluorescence intensity change and thus quantitatively identify ER stress prior to ER-phagy.
 
 
 
