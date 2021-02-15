@@ -21,21 +21,15 @@ There are three hyperparameters in our tool: edge detection operator (Sobel/Prew
 Our demo can be reproduced by directly running the following command:
 >> Optimization
 
-After the code runs, each hyperparameter combination will generate a set of binary images. Those binary images are stored in the folder "processed_data". Each hyperparameter combination will create a folder, such as "Sobel_4_30". In the workspace of the MATLAB, the Connectivity density of each image in each hyperparameter combination can be accessed by the variable "all_res" which is a 2D matrix. In ""all_res"", the first dimension is the list of hyperparameter combinations and the second dimension is the list of images.
+After the code runs, each hyperparameter combination will generate a set of binary images. Those binary images are stored in the folder "processed_data". Each hyperparameter combination will create a folder, such as "Sobel_4_30". In the workspace of the MATLAB, the connectivity density of each image in each hyperparameter combination can be accessed by the variable "all_res" which is a 2D matrix. In ""all_res"", the first dimension is the list of hyperparameter combinations and the second dimension is the list of images.
 
 In our computer (Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz 1.99 GHz, 16 GB RAM), this demo took nearly 5 hours to run.
 
 # Instructions for use
+If you want to change the hyperparameter option of our demo, you can set the three hyperparameters in the "Optimization.m" by your own idea. Then run the code by following our demo instruction.
 
-
-However, you can set the three hyperparameters in the "Optimization.m" by your own idea. 
-
-You can reproduce our demo by directly running this function.
-
-Use the tool
-
-If you have read your image into the MATLAB workspace, you can implement the following command to calculate the unit connectivity of your image.
->> [clo_img, num, mea, med] = Connectivity_analysis(img, thres, pix_w);
+In addition to processing the image data in the demo, you can also process your own images. you can implement the following command to calculate the connectivity density of your image.
+>> [clo_img, num, mea, med] = Connectivity_analysis(img, pix_w, thres, det_str, con_num);
 
 To get the help of the function "Connectivity_analysis", please implement
 >> help Connectivity_analysis
