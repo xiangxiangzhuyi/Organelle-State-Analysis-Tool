@@ -16,7 +16,7 @@ There are three folders: "data", "mat_script_v3", "processed_data" in our tool.
 2) "mat_script_v3" contains the code of the tool.
 3) "processed_data" is the output folder of our tool. The binary images obtained by our tool are stored in this folder. There are three corresponding subfolders in "processed_data" to store the binary images of the three categories： "EBSS-treat_mask", "TM-treated_mask", and "untreated_mask".
 
-There are three hyperparameters in our tool: edge detection operator (Sobel/Prewitt/Roberts/Canny), pixel connectivity (4/8), and minimum area of ER membrane in pixel number (10/20/30/40/50). We have listed some options for the three hyperparameters. The three hyperparameters will produce 40 hyperparameter combinations. 
+There are three hyperparameters in our tool: edge detection operator (Sobel/Prewitt/Roberts/Canny), pixel connectivity (4/8), and minimum area of ER membrane in pixel number (10/20/30/40/50). The three hyperparameters will produce 40 hyperparameter combinations. 
 
 Our demo can be reproduced by directly running the following command:
 >> Optimization
