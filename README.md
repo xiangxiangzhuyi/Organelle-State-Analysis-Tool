@@ -12,16 +12,16 @@ Please download all files and add the folder "mat_script_v3" to your MATLAB path
 
 # Demo
 There are three folders: "data", "mat_script_v3", "processed_data" in our tool.
-1) "data" contains the images used in the demo. These images are divided into three categories by three subfolders: "EBSS-treat_mask", "TM-treated_mask", and "untreated_mask". Each subfolder contain 10 images.
+1) "data" contains the images used in the demo. These images are divided into three categories by three subfolders: "EBSS-treat_mask", "TM-treated_mask", and "untreated_mask". Each subfolder contains 10 images.
 2) "mat_script_v3" contains the code of the tool.
-3) "processed_data" is the output folder of the our tool. The binary images obtained by our tool are stored in this folder. There are three corresponding subfolders in "processed_data" to store the binary images of the three categories： "EBSS-treat_mask", "TM-treated_mask", and "untreated_mask".
+3) "processed_data" is the output folder of our tool. The binary images obtained by our tool are stored in this folder. There are three corresponding subfolders in "processed_data" to store the binary images of the three categories： "EBSS-treat_mask", "TM-treated_mask", and "untreated_mask".
 
 There are three hyperparameters in our tool: edge detection operator (Sobel/Prewitt/Roberts/Canny), pixel connectivity (4/8), and minimum area of ER membrane in pixel number (10/20/30/40/50). We have listed some options for the three hyperparameters. The three hyperparameters will produce 40 hyperparameter combinations. 
 
 Our demo can be reproduced by directly running the following command:
 >> Optimization
 
-After the code runs, each hyperparameter combination will generate a set of binary images. Those binary images are stored in the folder "processed_data". Each hyperparameter combination will create a folder, such as "Sobel_4_30". In the workspace of the MATLAB, the connectivity density of each image in each hyperparameter combination can be accessed by the variable "all_res" which is a 2D matrix. In ""all_res"", the first dimension is the list of hyperparameter combinations and the second dimension is the list of images.
+After the code runs, each hyperparameter combination will generate a set of binary images. Those binary images are stored in the folder "processed_data". Each hyperparameter combination will create a folder, such as "Sobel_4_30". In the workspace of MATLAB, the connectivity density of each image in each hyperparameter combination can be accessed by the variable "all_res" which is a 2D matrix. In "all_res", the first dimension is the list of hyperparameter combinations and the second dimension is the list of images.
 
 In our computer (Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz 1.99 GHz, 16 GB RAM), this demo took nearly 5 hours to run.
 
